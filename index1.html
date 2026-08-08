@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+<style>
+    .body{
+        margin:0;
+        padding:0 5px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+         /* Call To Action Card */
+        .cta-card {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 18px;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        /* Cards */
+        .custom-card {
+            border: 1px solid #686666;
+            border-radius: 6px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .custom-card .card-body {
+            padding: 25px;
+        }
+
+        .custom-card .card-title {
+            font-size: 36px;
+            color: #10243a;
+            margin-bottom: 15px;
+        }
+
+        .custom-card .card-text {
+            font-size: 22px;
+            line-height: 1.45;
+            color: #10243a;
+        }
+
+        .card-footer {
+            background-color: #f8f8f8;
+            padding: 6px 12px;
+        }
+
+        .btn-custom {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0b5ed7;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            font-size: 22px;
+        }
+      .carousel-item img{
+            height:500px;
+            object-fit:cover;
+        }
+
+        .content-img{
+            width:100%;
+            border-radius:8px;
+        }
+
+        .content{
+            padding:60px 0;
+        }
+
+        .navbar-brand{
+            font-size:32px;
+            font-weight:bold;
+        }
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-3">
+
+        <a class="navbar-brand" href="#">WU</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">History</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Vision and Mission</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Collaboration</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+ 
+  <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="images/la.jpg"
+                class="d-block" style="width: 100%;" alt="Los Angeles">
+        </div>
+
+        <div class="carousel-item active">
+            <img src="images/ny.jpg"
+                class="d-block" style="width: 100%;" alt="New York">
+        </div>
+
+        <div class="carousel-item active">
+            <img src="images/chicago.jpg"
+                class="d-block" style="width: 100%;" alt="Chicago">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next" type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+<!-- Content -->
+<section class="content">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+                <img src="images/images_10.jpg"
+                    class="content-img">
+            </div>
+
+            <div class="col-lg-5">
+
+                <h1 class="fw-bold mb-4">
+                    Business Name or Tagline
+                </h1>
+
+                <p class="fs-5">
+                    This is a template that is great for small businesses.
+                    It doesn't have too much fancy flare to it, but it
+                    makes a great use of the standard Bootstrap core
+                    components. Feel free to use this template for any
+                    project you want!
+                </p>
+
+                <a href="#" class="btn btn-primary btn-lg">
+                    Call to Action!
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+     
+            <div class="footer">
+  <div class="container-fluid">
+
+    <span class="cta-card">This call to action card is a great place to showcase some important information or display a clever tagline!</span>
+
+  </div>
+</div>
+
+</section>
+
+    <!-- Cards Section -->
+    <div class="container-fluid px-0">
+
+        <div class="row g-4">
+
+            <!-- Card One -->
+            <div class="col-md-4">
+                <div class="custom-card">
+
+                    <div class="card-body">
+                        <h2 class="card-title">Card One</h2>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Rem magni quas ex numquam, maxime minus quam
+                            molestias corporis quod, ea minima accusamus.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-custom">
+                            More Info
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card Two -->
+            <div class="col-md-4">
+                <div class="custom-card">
+
+                    <div class="card-body">
+                        <h2 class="card-title">Card Two</h2>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quod tenetur natus at dolorem enim! Nesciunt pariatur
+                            voluptatem sunt quam eaque, vel, non in id dolore
+                            voluptates quos eligendi labore.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-custom">
+                            More Info
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card Three -->
+            <div class="col-md-4">
+                <div class="custom-card">
+
+                    <div class="card-body">
+                        <h2 class="card-title">Card Three</h2>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Rem magni quas ex numquam, maxime minus quam
+                            molestias corporis quod.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-custom">
+                            More Info
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+<footer class="footer">
+        Copyright @2026
+</footer>
+</body>
+</html>
